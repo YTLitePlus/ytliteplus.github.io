@@ -635,7 +635,7 @@
             title="See on Github">
             <img alt="See on Github" src="./images/image_2.png" />
           </a>
-          <a class="app__button-download" id="download-link" href="https://files.catbox.moe/5vd19e.ipa" target="_blank" title=".ipa download">
+          <a class="app__button-download" id="download-link" target="_blank" title=".ipa download">
             <img alt=".ipa download" src="./images/image_3.png" />
           </a>
         </div>
@@ -650,7 +650,7 @@
       <a class="app__button-web" href="https://github.com/Balackburn/YTLitePlus" target="_blank" title="See on Github">
         <img alt="See on Github" src="./images/image_5.png" />
       </a>
-      <a class="app__button-download" id="download-link" href="https://files.catbox.moe/5vd19e.ipa" target="_blank" title=".ipa download">
+      <a class="app__button-download" id="download-link" target="_blank" title=".ipa download">
         <img alt=".ipa download" src="./images/image_3.png" />
       </a>
 
@@ -793,34 +793,26 @@
       var tobi = new Tobi();
     };
   </script>
-  <script>
-    const repoOwner = "Balackburn";
-    const repoName = "YTLitePlus";
-    const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/releases/latest`;
-
-    async function updateDownloadLink() {
-      try {
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-
-        // Find the asset with the ".ipa" file extension
-        const ipaAsset = data.assets.find((asset) => asset.name.endsWith('.ipa'));
-
-        if (ipaAsset) {
-          // Update download link for both desktop and mobile views
-          const downloadLinks = document.querySelectorAll('#download-link, .app__button-download');
-          downloadLinks.forEach((downloadLink) => {
-            downloadLink.href = ipaAsset.browser_download_url;
-          });
-        } else {
-          console.error("No .ipa file found in the latest release.");
-        }
-      } catch (error) {
-        console.error("Error fetching latest release information:", error);
-      }
-    }
-
-    updateDownloadLink();
+     <script>
+      document.getElementById('download-link').addEventListener('click', function() {
+          fetch('https://api.github.com/repos/YTLitePlus/YTLitePlus/releases/latest')
+              .then(response => response.json())
+              .then(data => {
+                  const bodyContent = data.body;
+                  const match = bodyContent.match(/### Catbox\s*`(.+?\.ipa)`/);
+                  if (match && match[1]) {
+                      const fileName = match[1];
+                      const downloadUrl = `https://files.catbox.moe/${fileName}`;
+                      window.location.href = downloadUrl;
+                  } else {
+                      alert('Download link not found in the latest release.');
+                  }
+              })
+              .catch(error => {
+                  console.error('Error:', error);
+                  alert('An error occurred while fetching the download link.');
+              });
+      });
   </script>
 </body>
 
