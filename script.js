@@ -1,25 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    initializeFancybox();
+    initializeLightbox();
     setupDownloadLink();
     setupSmoothScrolling();
     setupThemeToggle();
 });
 
-function initializeFancybox() {
+function initializeLightbox() {
     Fancybox.bind("[data-fancybox]", {
-        buttons: ["close", "slideShow", "fullScreen", "download"],
-        wheel: "slide",
-        transitionEffect: "fade",
-        animationEffect: "fade",
-        clickContent: "next",
-        clickSlide: "close",
-        dblclickContent: "zoom",
-        dblclickSlide: "zoom",
-    });
-
-    Fancybox.bind('.lightbox', {
         loop: true,
-        buttons: ["zoom", "slideShow", "fullScreen", "download", "thumbs", "close"],
+        buttons: ["close"],
+        transitionEffect: "fade",
+        clickSlide: "close",
         keyboard: {
             ArrowLeft: "prev",
             ArrowRight: "next",
@@ -67,31 +58,18 @@ function setupThemeToggle() {
     const themeToggle = document.getElementById('theme-toggle');
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
     
-    // Check for saved theme preference or use the system preference
     const currentTheme = localStorage.getItem("theme");
-    if (currentTheme == "light") {
-        document.body.classList.toggle("light-mode");
-    } else if (currentTheme == "dark") {
-        document.body.classList.remove("light-mode");
-    } else if (prefersDarkScheme.matches) {
-        document.body.classList.remove("light-mode");
-    } else {
-        document.body.classList.toggle("light-mode");
+    if (currentTheme === "light") {
+        document.body.classList.add("light-mode");
+    } else if (prefersDarkScheme.matches && currentTheme !== "dark") {
+        document.body.classList.add("light-mode");
     }
 
     themeToggle.addEventListener("click", function() {
-        let theme;
-        if (document.body.classList.contains("light-mode")) {
-            document.body.classList.remove("light-mode");
-            theme = "dark";
-        } else {
-            document.body.classList.add("light-mode");
-            theme = "light";
-        }
-        localStorage.setItem("theme", theme);
+        const isLightMode = document.body.classList.toggle("light-mode");
+        localStorage.setItem("theme", isLightMode ? "light" : "dark");
     });
 
-    // Add keyboard support
     themeToggle.addEventListener("keydown", function(e) {
         if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
