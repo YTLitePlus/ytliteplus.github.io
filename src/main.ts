@@ -6,7 +6,7 @@ Fancybox.bind("[data-fancybox]");
 
 const alert = document.getElementById("alert") as HTMLDialogElement;
 
-document.getElementById("downloadIpa")!.addEventListener("click", async () => {
+async function handleDownload() {
   const response = await fetch("https://api.github.com/repos/YTLitePlus/YTLitePlus/releases/latest");
   const json = await response.json();
 
@@ -18,7 +18,15 @@ document.getElementById("downloadIpa")!.addEventListener("click", async () => {
   } else {
     alert.showModal();
   }
-});
+}
+
+// Handle /download route or #download hash
+if (window.location.pathname === '/download' || window.location.hash === '#download') {
+  handleDownload();
+}
+
+// Regular download button click handler
+document.getElementById("downloadIpa")!.addEventListener("click", handleDownload);
 
 const classes = document.documentElement.classList;
 
