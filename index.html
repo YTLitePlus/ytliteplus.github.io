@@ -1,215 +1,478 @@
 <!doctype html>
 <html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="YTLitePlus - Supercharge your YouTube Experience"
+    />
+    <title>YTLitePlus - Supercharge Your YouTube Experience</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/Logo.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="YTLitePlus - Supercharge your YouTube Experience" />
-  <title>YTLitePlus - Supercharge Your YouTube Experience</title>
-</head>
+  <body class="bg-white transition-colors dark:bg-black">
+    <div class="flex h-screen w-screen justify-center p-8">
+      <main class="w-full space-y-20 md:w-[70%]">
+        <header
+          class="flex flex-col items-center gap-10 md:flex-row md:items-start"
+        >
+          <img
+            src="/Logo.png"
+            class="size-[7.625rem] rounded-3xl border border-gray-400 sm:size-[11.375rem] dark:border-gray-500"
+          />
+          <div
+            class="flex grow flex-col items-center justify-between gap-4 md:items-stretch"
+          >
+            <h1
+              class="text-3xl font-bold text-black sm:text-5xl dark:text-white"
+            >
+              YTLitePlus
+            </h1>
+            <h2
+              class="pb-8 text-xl text-gray-500 sm:pb-0 sm:text-3xl dark:text-gray-400"
+            >
+              YTLite with more features!
+            </h2>
+            <div class="grid grid-cols-[repeat(auto-fit,14rem)] gap-3">
+              <a
+                href="altstore://source/?url=https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/apps.json"
+                class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500"
+              >
+                <img
+                  src="/AltStore.png"
+                  class="size-10 rounded-lg border border-gray-400 dark:border-gray-500"
+                />
+                <div class="text-left">
+                  <h2
+                    class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white"
+                  >
+                    Add to Altstore
+                  </h2>
+                  <h2 class="font-semibold text-gray-500 dark:text-gray-400">
+                    or SideStore
+                  </h2>
+                </div>
+              </a>
 
-<body class="bg-white transition-colors dark:bg-black">
-  <div class="flex h-screen w-screen justify-center p-8">
-    <main class="w-full space-y-20 md:w-[70%]">
-      <header class="flex flex-col items-center gap-10 md:flex-row md:items-start">
-        <img src="/Logo.png"
-          class="size-[7.625rem] rounded-3xl border border-gray-400 sm:size-[11.375rem] dark:border-gray-500" />
-        <div class="flex grow flex-col items-center justify-between gap-4 md:items-stretch">
-          <h1 class="text-3xl font-bold text-black sm:text-5xl dark:text-white">YTLitePlus</h1>
-          <h2 class="pb-8 text-xl text-gray-500 sm:pb-0 sm:text-3xl dark:text-gray-400">YTLite with more features!</h2>
-          <div class="grid grid-cols-[repeat(auto-fit,14rem)] gap-3">
-            <a href="altstore://source/?url=https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/apps.json"
-              class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
-              <img src="/AltStore.png" class="size-10 rounded-lg border border-gray-400 dark:border-gray-500" />
-              <div class="text-left">
-                <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Add to Altstore</h2>
-                <h2 class="font-semibold text-gray-500 dark:text-gray-400">or SideStore</h2>
-              </div>
-            </a>
+              <a
+                href="//github.com/YTLitePlus/YTLitePlus"
+                target="_blank"
+                class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  viewBox="0 0 98 96"
+                  class="size-10 rounded-lg border border-gray-400 bg-black p-1 text-white dark:border-gray-500"
+                >
+                  <path
+                    fill="#fff"
+                    d="M49 0a49 49 0 0 0-15 96c2 0 3-1 3-2V84c-14 3-17-5-17-5-2-6-5-8-5-8-5-3 0-3 0-3 5 1 8 5 8 5 4 8 11 6 14 4 0-3 2-5 3-6-11-1-22-5-22-24 0-6 2-10 5-14-1-1-2-6 0-13 0 0 4-1 14 5a47 47 0 0 1 12-1l12 1c9-6 13-5 13-5 3 7 1 12 1 13 3 4 5 8 5 14 0 19-11 23-22 24 1 1 3 4 3 9v14c0 1 1 2 3 2 20-7 34-25 34-47C98 22 76 0 49 0z"
+                  />
+                </svg>
+                <div class="text-left">
+                  <h2
+                    class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white"
+                  >
+                    See on GitHub
+                  </h2>
+                  <h2 class="font-semibold text-gray-500 dark:text-gray-400">
+                    Source Code
+                  </h2>
+                </div>
+              </a>
 
-            <a href="//github.com/YTLitePlus/YTLitePlus" target="_blank"
-              class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
-              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 98 96"
-                class="size-10 rounded-lg border border-gray-400 bg-black p-1 text-white dark:border-gray-500">
-                <path fill="#fff"
-                  d="M49 0a49 49 0 0 0-15 96c2 0 3-1 3-2V84c-14 3-17-5-17-5-2-6-5-8-5-8-5-3 0-3 0-3 5 1 8 5 8 5 4 8 11 6 14 4 0-3 2-5 3-6-11-1-22-5-22-24 0-6 2-10 5-14-1-1-2-6 0-13 0 0 4-1 14 5a47 47 0 0 1 12-1l12 1c9-6 13-5 13-5 3 7 1 12 1 13 3 4 5 8 5 14 0 19-11 23-22 24 1 1 3 4 3 9v14c0 1 1 2 3 2 20-7 34-25 34-47C98 22 76 0 49 0z" />
+              <button
+                id="downloadIpa"
+                class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#fff"
+                  stroke-width="2"
+                  class="size-10 rounded-lg border border-gray-400 bg-black p-1.5 dark:border-gray-500"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 7.01H5.94c-1.25 0-2.25 1-2.25 2.24V19.5c0 1.24 1 2.25 2.25 2.25h12.12c1.25 0 2.25-1.01 2.25-2.25V9.25c0-1.24-1-2.24-2.25-2.24H15m-6 6.55 3 3m0 0 3-3m-3 3V2.25"
+                  />
+                </svg>
+                <div class="text-left">
+                  <h2
+                    class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white"
+                  >
+                    Download .ipa
+                  </h2>
+                  <h2 class="font-semibold text-gray-500 dark:text-gray-400">
+                    files.catbox.moe
+                  </h2>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div>
+            <button
+              id="themeToggle"
+              type="button"
+              class="grid size-10 place-items-center rounded-full transition-colors hover:bg-gray-100 dark:hover:bg-gray-900"
+              aria-label="Toggle Theme"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="#000"
+                stroke-width="1.5"
+                class="size-8 p-1 dark:hidden"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M22 15a10 10 0 0 1-4 1A10 10 0 0 1 9 2a10 10 0 0 0-6 9c0 6 4 10 10 10a10 10 0 0 0 9-6Z"
+                />
               </svg>
-              <div class="text-left">
-                <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">See on GitHub</h2>
-                <h2 class="font-semibold text-gray-500 dark:text-gray-400">Source Code</h2>
-              </div>
-            </a>
-
-            <button id="downloadIpa"
-              class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
-              <svg xmlns="http://www.w3.org/2000/svg" stroke="#fff" stroke-width="2"
-                class="size-10 rounded-lg border border-gray-400 bg-black p-1.5 dark:border-gray-500"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 7.01H5.94c-1.25 0-2.25 1-2.25 2.24V19.5c0 1.24 1 2.25 2.25 2.25h12.12c1.25 0 2.25-1.01 2.25-2.25V9.25c0-1.24-1-2.24-2.25-2.24H15m-6 6.55 3 3m0 0 3-3m-3 3V2.25" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="2"
+                class="hidden size-8 p-1 dark:block"
+                viewBox="0 0 24 24"
+                stroke="#fff"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2m6 1-1 1m4 5h-2m-1 6-1-1m-5 2v2m-5-4-1 1m-1-6H3m4-5L6 6m10 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"
+                />
               </svg>
-              <div class="text-left">
-                <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Download .ipa</h2>
-                <h2 class="font-semibold text-gray-500 dark:text-gray-400">files.catbox.moe</h2>
-              </div>
             </button>
           </div>
+        </header>
+        <div class="space-y-10">
+          <h1 class="text-4xl font-bold text-black dark:text-white">
+            Screenshots
+          </h1>
+          <div class="flex gap-4 overflow-x-scroll p-4">
+            <a class="picture" href="/Screenshot-1.png" data-fancybox="gallery">
+              <img
+                decoding="async"
+                loading="lazy"
+                class="rounded-3xl"
+                src="/Screenshot-1.png"
+                alt="YTLitePlus home screen"
+                width="750"
+                height="1334"
+              />
+            </a>
+            <a class="picture" href="/Screenshot-2.png" data-fancybox="gallery">
+              <img
+                decoding="async"
+                loading="lazy"
+                class="rounded-3xl"
+                src="/Screenshot-2.png"
+                alt="YTLitePlus video player"
+                width="750"
+                height="1334"
+              />
+            </a>
+            <a class="picture" href="/Screenshot-3.png" data-fancybox="gallery">
+              <img
+                decoding="async"
+                loading="lazy"
+                class="rounded-3xl"
+                src="/Screenshot-3.png"
+                alt="YTLitePlus settings menu"
+                width="750"
+                height="1334"
+              />
+            </a>
+            <a class="picture" href="/Screenshot-4.png" data-fancybox="gallery">
+              <img
+                decoding="async"
+                loading="lazy"
+                class="rounded-3xl"
+                src="/Screenshot-4.png"
+                alt="YTLitePlus advanced settings"
+                width="750"
+                height="1334"
+              />
+            </a>
+            <a class="picture" href="/Screenshot-5.png" data-fancybox="gallery">
+              <img
+                decoding="async"
+                loading="lazy"
+                class="rounded-3xl"
+                src="/Screenshot-5.png"
+                alt="YTLitePlus video quality options"
+                width="750"
+                height="1334"
+              />
+            </a>
+            <a class="picture" href="/Screenshot-6.png" data-fancybox="gallery">
+              <img
+                decoding="async"
+                loading="lazy"
+                class="rounded-3xl"
+                src="/Screenshot-6.png"
+                alt="YTLitePlus playback speed options"
+                width="750"
+                height="1334"
+              />
+            </a>
+            <a class="picture" href="/Screenshot-7.png" data-fancybox="gallery">
+              <img
+                decoding="async"
+                loading="lazy"
+                class="rounded-3xl"
+                src="/Screenshot-7.png"
+                alt="YTLitePlus picture-in-picture mode"
+                width="750"
+                height="1334"
+              />
+            </a>
+            <a class="picture" href="/Screenshot-8.png" data-fancybox="gallery">
+              <img
+                decoding="async"
+                loading="lazy"
+                class="rounded-3xl"
+                src="/Screenshot-8.png"
+                alt="YTLitePlus sponsorblock settings"
+                width="750"
+                height="1334"
+              />
+            </a>
+            <a class="picture" href="/Screenshot-9.png" data-fancybox="gallery">
+              <img
+                decoding="async"
+                loading="lazy"
+                class="rounded-3xl"
+                src="/Screenshot-9.png"
+                alt="YTLitePlus additional features"
+                width="750"
+                height="1334"
+              />
+            </a>
+          </div>
         </div>
-        <div>
-          <button id="themeToggle" type="button"
-            class="grid size-10 place-items-center rounded-full transition-colors hover:bg-gray-100 dark:hover:bg-gray-900"
-            aria-label="Toggle Theme">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-width="1.5"
-              class="size-8 p-1 dark:hidden" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M22 15a10 10 0 0 1-4 1A10 10 0 0 1 9 2a10 10 0 0 0-6 9c0 6 4 10 10 10a10 10 0 0 0 9-6Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" class="hidden size-8 p-1 dark:block"
-              viewBox="0 0 24 24" stroke="#fff">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 3v2m6 1-1 1m4 5h-2m-1 6-1-1m-5 2v2m-5-4-1 1m-1-6H3m4-5L6 6m10 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
-            </svg>
-          </button>
+        <div class="space-y-10">
+          <h1 class="text-4xl font-bold text-black dark:text-white">
+            Description
+          </h1>
+          <h2
+            class="text-balance text-2xl font-semibold text-gray-500 dark:text-gray-400"
+          >
+            YouTube for iOS, supercharged with
+            <a href="//github.com/dayanch96" target="_blank" class="link"
+              >@dayanch96</a
+            >
+            YouTube Plus (ex. YTLite) and several other tweaks.
+          </h2>
+          <ul
+            class="space-y-6 text-xl font-medium text-black md:text-2xl dark:text-white"
+          >
+            <li class="text-balance">
+              <a target="_blank" href="//github.com/dayanch96" class="link"
+                >Youtube Plus</a
+              >: YouTube tweak providing no ads, background playback,
+              customizable navigation and tab bars; includes Advanced mode with
+              over 50 additional options for enhanced customization.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/Galactic-Dev/iSponsorBlock"
+                class="link"
+                >iSponsorBlock</a
+              >: Skips annoying sponsor ads inside videos. iSponsorBlock is
+              based on
+              <a target="_blank" href="https://sponsor.ajay.app/" class="link"
+                >SponsorBlock engine</a
+              >. Basically, this is the iOS version of the SponsorBlock
+              extension.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/PoomSmart/YouPiP"
+                class="link"
+                >YouPiP</a
+              >: Enable YouTube's native PiP. More options are in YouTube
+              Settings => General.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/PoomSmart/YTUHD"
+                class="link"
+                >YTUHD</a
+              >: Unlock VP9 codec and in effect, enables video quality of 2K and
+              4K. You can configure YTUHD in YouTube's Settings - Video quality
+              preferences.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/PoomSmart/Return-YouTube-Dislikes"
+                class="link"
+                >Return YouTube Dislike</a
+              >: Brings back Dislike counts under YouTube videos using
+              ReturnYoutubeDislike's API.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/PoomSmart/YTClassicVideoQuality"
+                class="link"
+                >YTClassicVideoQuality</a
+              >: Brings back the old video quality selector, which is a lot
+              better than the new one.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/level3tjg/YTNoHoverCards"
+                class="link"
+                >YTNoHoverCards</a
+              >: Offer an option to enable/disable the annoying suggested videos
+              show up at the end of the videos.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/PoomSmart/YTABGoodies"
+                class="link"
+                >YTABGoodies</a
+              >: Allow you to disable some YouTube A/B testing features. It is a
+              combination of several tweaks, such as YouAreThere,
+              YouRememberCaption, and YTNoCheckLocalNetwork.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/PoomSmart/NoYTPremium"
+                class="link"
+                >NOYTPremium</a
+              >: Remove YouTube Premium upsell alerts.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/lyvendia/YTSpeed"
+                class="link"
+                >YTSpeed</a
+              >: Add 2.25x to 5x playback speed options in the video player.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/level3tjg/YTMiniplayerEnabler"
+                class="link"
+                >YTMiniplayerEnabler</a
+              >: Enable Miniplayer for all YouTube videos.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/therealFoxster/DontEatMyContent"
+                class="link"
+                >DontEatMyContent</a
+              >: Prevent the notch/Dynamic Island from munching on 2:1 video
+              content in YouTube.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/PoomSmart/YTShortsProgress"
+                class="link"
+                >YTShortsProgress</a
+              >: Always enable progress bar and scrubbing in YouTube Shorts
+              (iPhone only).
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/PoomSmart/YTABConfig"
+                class="link"
+                >YTABConfig</a
+              >: Allow user to control over YouTube A/B testing flags.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/PoomSmart/YouMute"
+                class="link"
+                >YouMute</a
+              >: Mute/unmute videos in the YouTube Video Player directly.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/arichorn/LowContrastMode"
+                class="link"
+                >LowContrastMode</a
+              >: Makes the YouTube Interface Low Contrast as possible to make it
+              easier on the eyes.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/MiRO92/YTNoShorts"
+                class="link"
+                >YTNoShorts</a
+              >: Disable YouTube Shorts.
+            </li>
+            <li class="text-balance">
+              <a
+                target="_blank"
+                href="//github.com/Galactic-Dev/BigYTMiniPlayer"
+                class="link"
+                >BigYTMiniPlayer</a
+              >: Enable a bigger YouTube Miniplayer.
+            </li>
+          </ul>
         </div>
-      </header>
-      <div class="space-y-10">
-        <h1 class="text-4xl font-bold text-black dark:text-white">Screenshots</h1>
-        <div class="flex gap-4 overflow-x-scroll p-4">
-          <a class="picture" href="/Screenshot-1.png" data-fancybox="gallery">
-            <img decoding="async" loading="lazy" class="rounded-3xl" src="/Screenshot-1.png"
-              alt="YTLitePlus home screen" width="750" height="1334" />
-          </a>
-          <a class="picture" href="/Screenshot-2.png" data-fancybox="gallery">
-            <img decoding="async" loading="lazy" class="rounded-3xl" src="/Screenshot-2.png"
-              alt="YTLitePlus video player" width="750" height="1334" />
-          </a>
-          <a class="picture" href="/Screenshot-3.png" data-fancybox="gallery">
-            <img decoding="async" loading="lazy" class="rounded-3xl" src="/Screenshot-3.png"
-              alt="YTLitePlus settings menu" width="750" height="1334" />
-          </a>
-          <a class="picture" href="/Screenshot-4.png" data-fancybox="gallery">
-            <img decoding="async" loading="lazy" class="rounded-3xl" src="/Screenshot-4.png"
-              alt="YTLitePlus advanced settings" width="750" height="1334" />
-          </a>
-          <a class="picture" href="/Screenshot-5.png" data-fancybox="gallery">
-            <img decoding="async" loading="lazy" class="rounded-3xl" src="/Screenshot-5.png"
-              alt="YTLitePlus video quality options" width="750" height="1334" />
-          </a>
-          <a class="picture" href="/Screenshot-6.png" data-fancybox="gallery">
-            <img decoding="async" loading="lazy" class="rounded-3xl" src="/Screenshot-6.png"
-              alt="YTLitePlus playback speed options" width="750" height="1334" />
-          </a>
-          <a class="picture" href="/Screenshot-7.png" data-fancybox="gallery">
-            <img decoding="async" loading="lazy" class="rounded-3xl" src="/Screenshot-7.png"
-              alt="YTLitePlus picture-in-picture mode" width="750" height="1334" />
-          </a>
-          <a class="picture" href="/Screenshot-8.png" data-fancybox="gallery">
-            <img decoding="async" loading="lazy" class="rounded-3xl" src="/Screenshot-8.png"
-              alt="YTLitePlus sponsorblock settings" width="750" height="1334" />
-          </a>
-          <a class="picture" href="/Screenshot-9.png" data-fancybox="gallery">
-            <img decoding="async" loading="lazy" class="rounded-3xl" src="/Screenshot-9.png"
-              alt="YTLitePlus additional features" width="750" height="1334" />
-          </a>
-        </div>
-      </div>
-      <div class="space-y-10">
-        <h1 class="text-4xl font-bold text-black dark:text-white">Description</h1>
-        <h2 class="text-balance text-2xl font-semibold text-gray-500 dark:text-gray-400">
-          YouTube for iOS, supercharged with
-          <a href="//github.com/dayanch96" target="_blank" class="link">@dayanch96</a>
-          YouTube Plus (ex. YTLite) and several other tweaks.
-        </h2>
-        <ul class="space-y-6 text-xl font-medium text-black md:text-2xl dark:text-white">
-          <li class="text-balance">
-            <a target="_blank" href="//github.com/dayanch96" class="link">Youtube Plus</a>: YouTube tweak providing no
-            ads, background playback, customizable navigation and tab bars; includes
-            Advanced mode with over 50 additional options for enhanced customization.
-          </li>
-          <li class="text-balance">
-            <a target="_blank" href="//github.com/Galactic-Dev/iSponsorBlock" class="link">iSponsorBlock</a>: Skips
-            annoying sponsor ads inside videos. iSponsorBlock is based on
-            <a target="_blank" href="https://sponsor.ajay.app/" class="link">SponsorBlock engine</a>. Basically, this is
-            the iOS version of the SponsorBlock extension.
-          </li>
-          <li class="text-balance"><a target="_blank" href="//github.com/PoomSmart/YouPiP" class="link">YouPiP</a>:
-            Enable YouTube's native PiP. More options are in YouTube Settings => General.</li>
-          <li class="text-balance">
-            <a target="_blank" href="//github.com/PoomSmart/YTUHD" class="link">YTUHD</a>: Unlock VP9 codec and in
-            effect, enables video quality of 2K and 4K. You can configure YTUHD in YouTube's
-            Settings - Video quality preferences.
-          </li>
-          <li class="text-balance">
-            <a target="_blank" href="//github.com/PoomSmart/Return-YouTube-Dislikes" class="link">Return YouTube
-              Dislike</a>: Brings back Dislike counts under YouTube videos using
-            ReturnYoutubeDislike's API.
-          </li>
-          <li class="text-balance">
-            <a target="_blank" href="//github.com/PoomSmart/YTClassicVideoQuality"
-              class="link">YTClassicVideoQuality</a>: Brings back the old video quality selector, which is a lot better
-            than the
-            new one.
-          </li>
-          <li class="text-balance">
-            <a target="_blank" href="//github.com/level3tjg/YTNoHoverCards" class="link">YTNoHoverCards</a>: Offer an
-            option to enable/disable the annoying suggested videos show up at the end of the
-            videos.
-          </li>
-          <li class="text-balance">
-            <a target="_blank" href="//github.com/PoomSmart/YTABGoodies" class="link">YTABGoodies</a>: Allow you to
-            disable some YouTube A/B testing features. It is a combination of several tweaks,
-            such as YouAreThere, YouRememberCaption, and YTNoCheckLocalNetwork.
-          </li>
-          <li class="text-balance"><a target="_blank" href="//github.com/PoomSmart/NoYTPremium"
-              class="link">NOYTPremium</a>: Remove YouTube Premium upsell alerts.</li>
-          <li class="text-balance"><a target="_blank" href="//github.com/lyvendia/YTSpeed" class="link">YTSpeed</a>: Add
-            2.25x to 5x playback speed options in the video player.</li>
-          <li class="text-balance"><a target="_blank" href="//github.com/level3tjg/YTMiniplayerEnabler"
-              class="link">YTMiniplayerEnabler</a>: Enable Miniplayer for all YouTube videos.</li>
-          <li class="text-balance">
-            <a target="_blank" href="//github.com/therealFoxster/DontEatMyContent" class="link">DontEatMyContent</a>:
-            Prevent the notch/Dynamic Island from munching on 2:1 video content in YouTube.
-          </li>
-          <li class="text-balance">
-            <a target="_blank" href="//github.com/PoomSmart/YTShortsProgress" class="link">YTShortsProgress</a>: Always
-            enable progress bar and scrubbing in YouTube Shorts (iPhone only).
-          </li>
-          <li class="text-balance"><a target="_blank" href="//github.com/PoomSmart/YTABConfig"
-              class="link">YTABConfig</a>: Allow user to control over YouTube A/B testing flags.</li>
-          <li class="text-balance"><a target="_blank" href="//github.com/PoomSmart/YouMute" class="link">YouMute</a>:
-            Mute/unmute videos in the YouTube Video Player directly.</li>
-          <li class="text-balance">
-            <a target="_blank" href="//github.com/arichorn/LowContrastMode" class="link">LowContrastMode</a>: Makes the
-            YouTube Interface Low Contrast as possible to make it easier on the eyes.
-          </li>
-          <li class="text-balance"><a target="_blank" href="//github.com/MiRO92/YTNoShorts" class="link">YTNoShorts</a>:
-            Disable YouTube Shorts.</li>
-          <li class="text-balance"><a target="_blank" href="//github.com/Galactic-Dev/BigYTMiniPlayer"
-              class="link">BigYTMiniPlayer</a>: Enable a bigger YouTube Miniplayer.</li>
-        </ul>
-      </div>
-      <footer class="text-balance pb-20 text-center text-lg font-semibold text-black dark:text-white">
-        YTLitePlus was forked from
-        <a href="//github.com/arichornlover/YouTubeRebornPlus" target="_blank" class="link">@arichorn's
-          YoutubeRebornPlus</a>, who himself forked it from
-        <a href="//github.com/qnblackcat/uYouPlus" target="_blank" class="link">@qnblackcat's uYouPlus</a>
-        so thanks to them. Copyright © 2024-present YTLitePlus Contributors. Released under the GNU AGPLv3 license.
-      </footer>
-    </main>
-  </div>
-  <dialog id="alert"
-    class="space-y-3 rounded-2xl border border-gray-400 bg-white p-8 pt-20 dark:border-gray-500 dark:bg-black">
-    <h1 class="text-5xl font-bold text-black dark:text-white">Information</h1>
-    <h2 class="text-balance text-lg font-semibold text-gray-500 dark:text-gray-400">Download link wasn't found in the
-      latest release.</h2>
-    <br />
-    <form method="dialog">
-      <button
-        class="rounded-full px-3 py-1 font-medium text-black transition-colors hover:bg-gray-100 dark:text-white dark:hover:bg-gray-900">Okay!</button>
-    </form>
-  </dialog>
-  <script type="module" src="/src/main.ts"></script>
-</body>
-
+        <footer
+          class="text-balance pb-20 text-center text-lg font-semibold text-black dark:text-white"
+        >
+          YTLitePlus was forked from
+          <a
+            href="//github.com/arichornlover/YouTubeRebornPlus"
+            target="_blank"
+            class="link"
+            >@arichorn's YoutubeRebornPlus</a
+          >, who himself forked it from
+          <a
+            href="//github.com/qnblackcat/uYouPlus"
+            target="_blank"
+            class="link"
+            >@qnblackcat's uYouPlus</a
+          >
+          so thanks to them. Copyright © 2024-present YTLitePlus Contributors.
+          Released under the GNU AGPLv3 license.
+        </footer>
+      </main>
+    </div>
+    <dialog
+      id="alert"
+      class="space-y-3 rounded-2xl border border-gray-400 bg-white p-8 pt-20 dark:border-gray-500 dark:bg-black"
+    >
+      <h1 class="text-5xl font-bold text-black dark:text-white">Information</h1>
+      <h2
+        class="text-balance text-lg font-semibold text-gray-500 dark:text-gray-400"
+      >
+        Download link wasn't found in the latest release.
+      </h2>
+      <br />
+      <form method="dialog">
+        <button
+          class="rounded-full px-3 py-1 font-medium text-black transition-colors hover:bg-gray-100 dark:text-white dark:hover:bg-gray-900"
+        >
+          Okay!
+        </button>
+      </form>
+    </dialog>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
