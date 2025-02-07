@@ -7,7 +7,9 @@ Fancybox.bind("[data-fancybox]");
 const alert = document.getElementById("alert") as HTMLDialogElement;
 
 async function handleDownload() {
-  const response = await fetch("https://api.github.com/repos/YTLitePlus/YTLitePlus/releases/latest");
+  const response = await fetch(
+    "https://api.github.com/repos/YTLitePlus/YTLitePlus/releases/latest",
+  );
   const json = await response.json();
 
   const match = json.body.match(/### Catbox\s*`(.+?\.ipa)`/);
@@ -21,16 +23,22 @@ async function handleDownload() {
 }
 
 // Handle /download route or #download hash
-if (window.location.pathname === '/download' || window.location.hash === '#download') {
+if (
+  window.location.pathname === "/download" ||
+  window.location.hash === "#download"
+) {
   handleDownload();
 }
 
 // Regular download button click handler
-document.getElementById("downloadIpa")!.addEventListener("click", handleDownload);
+document
+  .getElementById("downloadIpa")!
+  .addEventListener("click", handleDownload);
 
 const classes = document.documentElement.classList;
 
-if (localStorage.getItem("theme") === null) localStorage.setItem("theme", "dark");
+if (localStorage.getItem("theme") === null)
+  localStorage.setItem("theme", "dark");
 if (localStorage.getItem("theme") === "light") classes.remove("dark");
 
 document.getElementById("themeToggle")!.addEventListener("click", () => {
